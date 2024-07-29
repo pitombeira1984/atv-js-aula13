@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function validarIdade(idade){
+        if(typeof idade !=='number' || idade < 0){
+            throw 'A idade deve ser um numero positivo';
+        }
+        if (idade < 18){
+            throw 'Você é menor de idade e não pode acessar este conteudo.';
+        }
+        console.log('Acesso permitido. Bem-vindo!');
+    }
+    try{
+        validarIdade(15);
+    }catch (erro){
+        console.error('ocorreu um erro:', erro);
+    }
+    </script>
+</body>
+</html>

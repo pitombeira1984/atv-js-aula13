@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Validação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+            <h2>Formulário de Validação</h2>
+        <form onsubmit="validateForm(event)">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br><br>
+
+            <label for="age">Idade:</label>
+            <input type="text" id="age" name="age"><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
