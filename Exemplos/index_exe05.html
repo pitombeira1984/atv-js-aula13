@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="nome" id="nome" placeholder="Digite seu Nome">
+    <script>
+        try{
+            let nome = document.getElementById("nome").value;
+            cadastroUsuario(nome);
+        }catch(error){
+            console.log(error);
+        }finally{
+            console.log("Terminei o Código");
+        }
+    </script>
+</body>
+</html>

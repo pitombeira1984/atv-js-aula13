@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de Exceções em Eventos</title>
+</head>
+<body>
+    <button id="myButton">Click me</button>
+    <script>
+        // Seleciona o botão
+        const myButton = document.getElementById('myButton');
+
+        // Adiciona um event listener ao botão
+        myButton.addEventListener('click', (event) => {
+            try {
+                // Código que pode lançar exceções
+                console.log('Botão Clicado');
+                
+                // Simulação de um erro
+                throw new Error('Algo deu Errado');
+
+                // Mais código que pode lançar exceções
+            } catch (error) {
+                // Lida com exceções
+                console.error('Um erro ocorreu:', error.message);
+                alert('Um erro ocorreu. Por favor, tente novamente mais tarde.');
+            }
+        });
+    </script>
+</body>
+</html>

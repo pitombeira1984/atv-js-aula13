@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const funcao1 = () => {
+            console.log("Sou a Funlçao 1")
+            try{
+                codigo;
+            }catch(error){
+                console.error(error);
+                throw error;
+            }
+        }
+
+        const funcao2 = () => {
+            console.log("Sou a Função 2");
+
+            asdf;
+
+        }
+
+        const main = () => {
+            try{
+                funcao1();
+                funcao2();
+            }catch(error){
+                console.error(error);
+            }            
+            console.log("Passou por Aqui!");
+        }
+        main()
+    </script>
+</body>
+</html>
